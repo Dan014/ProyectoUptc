@@ -12,8 +12,10 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
+import controller.CommandAction;
+
 public class JpanelLeftPantallaPrincipal extends JPanel {
-	JButton jButton, jButton2, jButton3, jButton4, jButton5, jButton6, jButton7;
+	JButton jButton;
 	ImageIcon imageIcon;
 	Icon icon;
 
@@ -24,79 +26,31 @@ public class JpanelLeftPantallaPrincipal extends JPanel {
 	private void init() {
 		this.setLayout(new GridLayout(7, 1));
 		setPreferredSize(new Dimension(300, 0));
+		this.add(myJButton(controller.CommandAction.boton1));
+		this.add(myJButton(controller.CommandAction.boton2));
+		this.add(myJButton(controller.CommandAction.boton3));
+		this.add(myJButton(controller.CommandAction.boton4));
+		this.add(myJButton(controller.CommandAction.boton5));
+		this.add(myJButton(controller.CommandAction.boton6));
+		this.add(myJButton(controller.CommandAction.boton7));
 
-		// this.setBackground(Color.red);
-		jButton = new JButton("HOME");
+
+		
+
+	}
+
+	private JButton myJButton(CommandAction commandAction) {
+	
+		jButton = new JButton(commandAction.getCommandName());
+		jButton.setBounds(0, 0, 200, 200);
 		jButton.setBackground(new Color(2, 41, 48));
 		jButton.setForeground(new Color(255, 255, 255));// blanco
-		imageIcon = new ImageIcon("src/images/HOME.png");
-		jButton.setBounds(0, 0, 200, 200);
-		icon = new ImageIcon(imageIcon.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+		imageIcon = new ImageIcon(commandAction.getRutaImage());
+		icon = new ImageIcon(imageIcon.getImage().getScaledInstance(50, 50, Image.SCALE_AREA_AVERAGING));
 		jButton.setIcon(icon);
-
-		jButton2 = new JButton("ARTICULOS");
-		jButton2.setBackground(new Color(2, 41, 48));
-		jButton2.setForeground(new Color(255, 255, 255));// blanco
-		imageIcon = new ImageIcon("src/images/articulos.png");
-		jButton2.setBounds(0, 0, 200, 200);
-		icon = new ImageIcon(imageIcon.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
-		jButton2.setIcon(icon);
-		
-		
-		jButton3 = new JButton("VENTAS");
-		jButton3.setBackground(new Color(2, 41, 48));
-		jButton3.setForeground(new Color(255, 255, 255));// blanco
-		imageIcon = new ImageIcon("src/images/VENTA.png");
-		jButton3.setBounds(0, 0, 200, 200);
-		icon = new ImageIcon(imageIcon.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
-		jButton3.setIcon(icon);
-		
-		
-		jButton4 = new JButton("COMPRAS");
-		jButton4.setBackground(new Color(2, 41, 48));
-		jButton4.setForeground(new Color(255, 255, 255));// blanco
-		imageIcon = new ImageIcon("src/images/COMPRA.png");
-		jButton4.setBounds(0, 0, 200, 200);
-		icon = new ImageIcon(imageIcon.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
-		jButton4.setIcon(icon);
-		
-		
-		jButton5 = new JButton("EMPLEADOS");
-		jButton5.setBackground(new Color(2, 41, 48));
-		jButton5.setForeground(new Color(255, 255, 255));// blanco
-		imageIcon = new ImageIcon("src/images/CLIENTES.png");
-		jButton5.setBounds(0, 0, 200, 200);
-		icon = new ImageIcon(imageIcon.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
-		jButton5.setIcon(icon);
-		
-		
-		jButton6 = new JButton("PROVEEDORES");
-		jButton6.setBackground(new Color(2, 41, 48));
-		jButton6.setForeground(new Color(255, 255, 255));// blanco
-		imageIcon = new ImageIcon("src/images/PROVEEDORES.png");
-		jButton6.setBounds(0, 0, 200, 200);
-		icon = new ImageIcon(imageIcon.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
-		jButton6.setIcon(icon);
-		
-		
-		jButton7 = new JButton("PAGOS");
-		jButton7.setBackground(new Color(2, 41, 48));
-		jButton7.setForeground(new Color(255, 255, 255));// blanco
-		imageIcon = new ImageIcon("src/images/PAGOS.png");
-		jButton7.setBounds(0, 0, 200, 200);
-		icon = new ImageIcon(imageIcon.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
-		jButton7.setIcon(icon);
-		
-		
-
+		jButton.setToolTipText(commandAction.getToolTip());
 		this.add(jButton);
-		this.add(jButton2);
-		this.add(jButton3);
-		this.add(jButton4);
-		this.add(jButton5);
-		this.add(jButton6);
-		this.add(jButton7);
-
+		return jButton;
 	}
 
 }
