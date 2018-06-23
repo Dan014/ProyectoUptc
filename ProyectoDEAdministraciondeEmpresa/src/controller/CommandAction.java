@@ -1,13 +1,13 @@
 package controller;
 
 public enum CommandAction {
-	boton1("Home", "AQUI SE EJECUTA EL COMANDO A", "src/images/CLIENTES.png"),
-	boton2("Articulos", "AQUI SE EJECUTA EL COMANDO S", "src/images/HOME.png"),
-	boton3("Compras", "AQUI SE EJECUTA EL COMANDO D", "src/images/HOME.png"),
-	boton4("Ventas", "AQUI SE EJECUTA EL COMANDO F", "src/images/HOME.png"),
-	boton5("Proveedores", "AQUI SE EJECUTA EL COMANDO G", "src/images/HOME.png"),
-	boton6("Empleados", "AQUI SE EJECUTA EL COMANDO A", "src/images/HOME.png"),
-	boton7("Pagos", "AQUI SE EJECUTA EL COMANDO H", "src/images/HOME.png");
+	boton1("HOME", "AQUI SE EJECUTA EL COMANDO A", "/images/HOME.png"),
+	boton2("ARTICULOS", "AQUI SE EJECUTA EL COMANDO S", "/images/articulos.png"),
+	boton3("COMPRAS", "AQUI SE EJECUTA EL COMANDO D", "/images/COMPRA.png"),
+	boton4("VENTAS", "AQUI SE EJECUTA EL COMANDO F", "/images/VENTA.png"),
+	boton5("PROVEEDORES", "AQUI SE EJECUTA EL COMANDO G", "/images/PROVEEDORES.png"),
+	boton6("EMPLEADOS", "AQUI SE EJECUTA EL COMANDO A", "/images/CLIENTES.png"),
+	boton7("PAGOS", "AQUI SE EJECUTA EL COMANDO H", "/images/PAGOS.png");
 
 	
 

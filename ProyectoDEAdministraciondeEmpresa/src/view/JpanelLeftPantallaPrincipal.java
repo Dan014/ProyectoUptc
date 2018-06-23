@@ -45,7 +45,7 @@ public class JpanelLeftPantallaPrincipal extends JPanel {
 		jButton.setBounds(0, 0, 200, 200);
 		jButton.setBackground(new Color(2, 41, 48));
 		jButton.setForeground(new Color(255, 255, 255));// blanco
-		imageIcon = new ImageIcon(commandAction.getRutaImage());
+		imageIcon = new ImageIcon(getClass().getResource(commandAction.getRutaImage()));
 		icon = new ImageIcon(imageIcon.getImage().getScaledInstance(50, 50, Image.SCALE_AREA_AVERAGING));
 		jButton.setIcon(icon);
 		jButton.setToolTipText(commandAction.getToolTip());
