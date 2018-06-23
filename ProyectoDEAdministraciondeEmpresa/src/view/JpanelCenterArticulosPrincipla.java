@@ -1,4 +1,4 @@
-package viewArticulosPrincipal;
+package view;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
-public class JpanelCenter extends JPanel {
+public class JpanelCenterArticulosPrincipla extends JPanel {
 	JLabel jLabel = new JLabel("PRODUCTO NUEVO");
 	JButton jButton;
 	JPanel jPanel, jPanel2;
@@ -29,7 +29,7 @@ public class JpanelCenter extends JPanel {
 	ImageIcon imageIcon;
 	Icon icon;
 
-	public JpanelCenter() {
+	public JpanelCenterArticulosPrincipla() {
 		init();
 
 	}

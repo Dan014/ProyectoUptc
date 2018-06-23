@@ -1,7 +1,7 @@
-package viewArticulosPrincipal;
+package view;
 
 
-public class TestPrincipal {
+public class TestPrincipalArticulosPrincipal {
 public static void main(String[] args) {
 	JFrameArticulosPrincipal javaAplication =  new JFrameArticulosPrincipal();
 }
