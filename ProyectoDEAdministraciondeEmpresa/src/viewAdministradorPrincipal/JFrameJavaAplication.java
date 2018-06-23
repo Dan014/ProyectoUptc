@@ -11,15 +11,15 @@ import javax.swing.JInternalFrame;
 
 public class JFrameJavaAplication extends JFrame {
 	
-	private JpanelNorte jpanelNorte;
-	private JpanelCenter jpanelCenter;
-	private JpanelLeft jpanelLeft;
+	private JpanelNorteAdministradorPrincipal jpanelNorte;
+	private JpanelCenterAdoministradorPrincipal jpanelCenter;
+	private JpanelLeftAdministradorPrincipal jpanelLeft;
 	
 	public JFrameJavaAplication() {
 		super(Constant.APP_NAME);
-		this.jpanelNorte =  new JpanelNorte();
-		this.jpanelCenter = new JpanelCenter();
-		this.jpanelLeft =  new JpanelLeft();
+		this.jpanelNorte =  new JpanelNorteAdministradorPrincipal();
+		this.jpanelCenter = new JpanelCenterAdoministradorPrincipal();
+		this.jpanelLeft =  new JpanelLeftAdministradorPrincipal();
 		init();
 
 	}

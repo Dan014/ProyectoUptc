@@ -12,12 +12,12 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-public class JpanelLeft extends JPanel {
+public class JpanelLeftAdministradorPrincipal extends JPanel {
 	JButton jButton, jButton2, jButton3, jButton4, jButton5, jButton6, jButton7, jButton8;
 	ImageIcon imageIcon;
 	Icon icon;
 
-	public JpanelLeft() {
+	public JpanelLeftAdministradorPrincipal() {
 		init();
 	}
 
