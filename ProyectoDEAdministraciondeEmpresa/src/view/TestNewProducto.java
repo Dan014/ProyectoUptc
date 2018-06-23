@@ -1,6 +1,6 @@
-package viewNuevoProducto;
+package view;
 
-public class TestNuevoProducto {
+public class TestNewProducto {
 public static void main(String[] args) {
 	JFrameNewProducto jFrameNewProducto =  new JFrameNewProducto();
 }

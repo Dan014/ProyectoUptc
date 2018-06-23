@@ -1,4 +1,4 @@
-package viewNuevoProducto;
+package view;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -13,16 +13,16 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 public class JFrameNewProducto extends JFrame {
-	CenterProducto centerProducto;
-	JpanelNorte jpanelNorte;
+	JpanelCenterNewProducto centerProducto;
+	JpanelNorteNewProducto jpanelNorte;
 	JButton jButton;
 	JLabel jLabel, jLabel2, jLabel3, jLabel4, jLabel5, jLabel6, jLabel7, jLabel8, jLabel9;
 	JTextField txtNombreTrabajador, txtAPaternoTrabajador, txtAMaternoTrabajador;
 
 	public JFrameNewProducto() {
 		super(Constant.APP_NAME);
-		centerProducto = new CenterProducto();
-		jpanelNorte =  new JpanelNorte();
+		centerProducto = new JpanelCenterNewProducto();
+		jpanelNorte =  new JpanelNorteNewProducto();
 		init();
 
 	}

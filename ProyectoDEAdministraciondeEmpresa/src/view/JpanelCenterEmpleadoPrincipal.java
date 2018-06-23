@@ -18,7 +18,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 public class JpanelCenterEmpleadoPrincipal extends JPanel {
-	JLabel jLabel = new JLabel("Ventas");
+	JLabel jLabel = new JLabel("Empleado");
 	JButton jButton, jButton2, jButton3;
 	JPanel jPanel, jPanel2;
 	private JTable jTable;

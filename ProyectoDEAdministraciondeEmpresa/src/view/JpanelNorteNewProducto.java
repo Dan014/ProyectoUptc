@@ -1,4 +1,4 @@
-package viewNuevoProducto;
+package view;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -8,10 +8,10 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class JpanelNorte extends JPanel {
+public class JpanelNorteNewProducto extends JPanel {
 	JLabel jLabel = new JLabel("PRODUCTO NUEVO");
 
-	public JpanelNorte() {
+	public JpanelNorteNewProducto() {
 		init();
 	}
 

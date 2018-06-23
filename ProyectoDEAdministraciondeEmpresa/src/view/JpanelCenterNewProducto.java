@@ -1,4 +1,4 @@
-package viewNuevoProducto;
+package view;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,14 +12,14 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class CenterProducto extends JPanel {
+public class JpanelCenterNewProducto extends JPanel {
 
 	JButton jButton;
 	JLabel jLabel, jLabel2, jLabel3, jLabel4, jLabel5, jLabel6, jLabel7, jLabel8, jLabel9;
 	JTextField codigo, preciocompra, stock, name, precioventa, stockminimo, marca;
 	JComboBox categoria;
 
-	public CenterProducto() {
+	public JpanelCenterNewProducto() {
 
 		init();
 
