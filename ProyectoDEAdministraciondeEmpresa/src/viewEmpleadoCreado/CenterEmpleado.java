@@ -104,7 +104,7 @@ public class CenterEmpleado extends JPanel {
 		add(jLabel5);
 
 		apellido = new JTextField("GARCIA LOPEZ");
-		telefono.setEditable(false);
+		apellido.setEditable(false);
 		apellido.setBounds(250, 40, 200, 25);
 		apellido.setBackground(new java.awt.Color(224, 224, 224));
 		apellido.setFont(new java.awt.Font("Andale Mono", 1, 14));
