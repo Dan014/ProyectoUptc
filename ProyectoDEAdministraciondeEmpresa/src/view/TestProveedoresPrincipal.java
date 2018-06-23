@@ -1,4 +1,4 @@
-package viewProveedoresPrincipal;
+package view;
 
 
 public class TestProveedoresPrincipal {
