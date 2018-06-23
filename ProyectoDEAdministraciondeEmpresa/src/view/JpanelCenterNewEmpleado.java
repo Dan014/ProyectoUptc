@@ -1,4 +1,4 @@
-package viewNuevoEmpleado;
+package view;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -15,7 +15,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class CenterEmpleado extends JPanel {
+public class JpanelCenterNewEmpleado extends JPanel {
 	ImageIcon imageIcon;
 	Icon icon;
 	JButton jButton;
@@ -23,7 +23,7 @@ public class CenterEmpleado extends JPanel {
 	JTextField name, cedula, direccion, telefono, apellido, cargo, edad, codigo;
 	JComboBox categoria;
 
-	public CenterEmpleado() {
+	public JpanelCenterNewEmpleado() {
 
 		init();
 

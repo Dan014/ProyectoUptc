@@ -1,4 +1,4 @@
-package viewEmpleadoCreado;
+package viewPerfilEmpleadoVistaEmpleado;
 
 import java.awt.Color;
 import java.awt.Dimension;

@@ -1,4 +1,4 @@
-package viewEmpleadoCreado;
+package viewPerfilEmpleadoVistaEmpleado;
 
 
 public class TestEmpeadoCreado {
