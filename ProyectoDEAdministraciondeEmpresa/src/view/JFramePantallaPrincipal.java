@@ -6,6 +6,7 @@ import java.awt.Toolkit;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JInternalFrame;
+import controller.ProyectoListener;
 
 
 
@@ -22,6 +23,7 @@ public class JFramePantallaPrincipal extends JFrame {
 		this.jpanelCenter = new JpanelCenterPantallarPrincipal();
 		this.jpanelLeft =  new JpanelLeftPantallaPrincipal();
 		this.jMeuBarPantallaPrincipal =  new JMeuBarPantallaPrincipal();
+		ProyectoListener.getInstance().setJpanelStatusBar(jpanelLeft);
 		init();
 
 	}
