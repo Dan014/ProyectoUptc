@@ -14,9 +14,9 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class JpanelCenterAdoministradorPrincipal extends JPanel {
+public class JpanelCenterPantallarPrincipal extends JPanel {
 
-	public JpanelCenterAdoministradorPrincipal() {
+	public JpanelCenterPantallarPrincipal() {
 		init();
 		
 	}

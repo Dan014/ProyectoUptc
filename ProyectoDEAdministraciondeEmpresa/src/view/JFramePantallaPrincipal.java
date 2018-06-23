@@ -9,18 +9,18 @@ import javax.swing.JInternalFrame;
 
 
 
-public class JFrameJavaAplicationPantallaPrincipal extends JFrame {
+public class JFramePantallaPrincipal extends JFrame {
 	
-	private JpanelNorteAdministradorPrincipal jpanelNorte;
-	private JpanelCenterAdoministradorPrincipal jpanelCenter;
-	private JpanelLeftAdministradorPrincipal jpanelLeft;
+	private JpanelNortePantallaPrincipal jpanelNorte;
+	private JpanelCenterPantallarPrincipal jpanelCenter;
+	private JpanelLeftPantallaPrincipal jpanelLeft;
 	private JMeuBarPantallaPrincipal jMeuBarPantallaPrincipal;
 	
-	public JFrameJavaAplicationPantallaPrincipal() {
+	public JFramePantallaPrincipal() {
 		super(Constant.APP_NAME);
-		this.jpanelNorte =  new JpanelNorteAdministradorPrincipal();
-		this.jpanelCenter = new JpanelCenterAdoministradorPrincipal();
-		this.jpanelLeft =  new JpanelLeftAdministradorPrincipal();
+		this.jpanelNorte =  new JpanelNortePantallaPrincipal();
+		this.jpanelCenter = new JpanelCenterPantallarPrincipal();
+		this.jpanelLeft =  new JpanelLeftPantallaPrincipal();
 		this.jMeuBarPantallaPrincipal =  new JMeuBarPantallaPrincipal();
 		init();
 

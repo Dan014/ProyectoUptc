@@ -11,15 +11,15 @@ import javax.swing.JInternalFrame;
 
 public class JFrameArticulosPrincipal extends JFrame {
 	
-	private JpanelNorteAdministradorPrincipal jpanelNorteAdministradorPrincipal;
+	private JpanelNortePantallaPrincipal jpanelNorteAdministradorPrincipal;
 	private  JpanelCenterArticulosPrincipla jpanelCenterArticulosPrincipla;
-	private JpanelLeftAdministradorPrincipal jpanelLeftAdministradorPrincipal;
+	private JpanelLeftPantallaPrincipal jpanelLeftAdministradorPrincipal;
 	
 	public JFrameArticulosPrincipal() {
 		super(Constant.APP_NAME);
-		this.jpanelNorteAdministradorPrincipal = new JpanelNorteAdministradorPrincipal();
+		this.jpanelNorteAdministradorPrincipal = new JpanelNortePantallaPrincipal();
 		this.jpanelCenterArticulosPrincipla = new JpanelCenterArticulosPrincipla();
-		this.jpanelLeftAdministradorPrincipal = new JpanelLeftAdministradorPrincipal();
+		this.jpanelLeftAdministradorPrincipal = new JpanelLeftPantallaPrincipal();
 		init();
 
 	}

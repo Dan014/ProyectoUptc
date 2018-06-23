@@ -1,4 +1,4 @@
-package viewComprasPrincipal;
+package view;
 
 
 public class TestCompras {
