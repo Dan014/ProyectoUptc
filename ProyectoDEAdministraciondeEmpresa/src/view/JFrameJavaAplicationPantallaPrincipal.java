@@ -1,4 +1,4 @@
-package viewAdministradorPrincipal;
+package view;
 
 import java.awt.BorderLayout;
 import java.awt.Toolkit;
@@ -9,13 +9,13 @@ import javax.swing.JInternalFrame;
 
 
 
-public class JFrameJavaAplication extends JFrame {
+public class JFrameJavaAplicationPantallaPrincipal extends JFrame {
 	
 	private JpanelNorteAdministradorPrincipal jpanelNorte;
 	private JpanelCenterAdoministradorPrincipal jpanelCenter;
 	private JpanelLeftAdministradorPrincipal jpanelLeft;
 	
-	public JFrameJavaAplication() {
+	public JFrameJavaAplicationPantallaPrincipal() {
 		super(Constant.APP_NAME);
 		this.jpanelNorte =  new JpanelNorteAdministradorPrincipal();
 		this.jpanelCenter = new JpanelCenterAdoministradorPrincipal();

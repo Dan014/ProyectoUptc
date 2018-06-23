@@ -1,4 +1,4 @@
-package viewAdministradorPrincipal;
+package view;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -13,7 +13,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class JpanelLeftAdministradorPrincipal extends JPanel {
-	JButton jButton, jButton2, jButton3, jButton4, jButton5, jButton6, jButton7, jButton8;
+	JButton jButton, jButton2, jButton3, jButton4, jButton5, jButton6, jButton7;
 	ImageIcon imageIcon;
 	Icon icon;
 
@@ -22,7 +22,7 @@ public class JpanelLeftAdministradorPrincipal extends JPanel {
 	}
 
 	private void init() {
-		this.setLayout(new GridLayout(8, 1));
+		this.setLayout(new GridLayout(7, 1));
 		setPreferredSize(new Dimension(300, 0));
 
 		// this.setBackground(Color.red);
@@ -61,7 +61,7 @@ public class JpanelLeftAdministradorPrincipal extends JPanel {
 		jButton4.setIcon(icon);
 		
 		
-		jButton5 = new JButton("CLIENTES");
+		jButton5 = new JButton("EMPLEADOS");
 		jButton5.setBackground(new Color(2, 41, 48));
 		jButton5.setForeground(new Color(255, 255, 255));// blanco
 		imageIcon = new ImageIcon("src/images/CLIENTES.png");
@@ -87,13 +87,7 @@ public class JpanelLeftAdministradorPrincipal extends JPanel {
 		icon = new ImageIcon(imageIcon.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
 		jButton7.setIcon(icon);
 		
-		jButton8 = new JButton("CONFIGURACIONES");
-		jButton8.setBackground(new Color(2, 41, 48));
-		jButton8.setForeground(new Color(255, 255, 255));// blanco
-		imageIcon = new ImageIcon("src/images/CONFI.png");
-		jButton8.setBounds(0, 0, 200, 200);
-		icon = new ImageIcon(imageIcon.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
-		jButton8.setIcon(icon);
+		
 
 		this.add(jButton);
 		this.add(jButton2);
@@ -102,7 +96,6 @@ public class JpanelLeftAdministradorPrincipal extends JPanel {
 		this.add(jButton5);
 		this.add(jButton6);
 		this.add(jButton7);
-		this.add(jButton8);
 
 	}
 
