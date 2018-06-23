@@ -14,12 +14,14 @@ public class JFrameJavaAplicationPantallaPrincipal extends JFrame {
 	private JpanelNorteAdministradorPrincipal jpanelNorte;
 	private JpanelCenterAdoministradorPrincipal jpanelCenter;
 	private JpanelLeftAdministradorPrincipal jpanelLeft;
+	private JMeuBarPantallaPrincipal jMeuBarPantallaPrincipal;
 	
 	public JFrameJavaAplicationPantallaPrincipal() {
 		super(Constant.APP_NAME);
 		this.jpanelNorte =  new JpanelNorteAdministradorPrincipal();
 		this.jpanelCenter = new JpanelCenterAdoministradorPrincipal();
 		this.jpanelLeft =  new JpanelLeftAdministradorPrincipal();
+		this.jMeuBarPantallaPrincipal =  new JMeuBarPantallaPrincipal();
 		init();
 
 	}
@@ -29,6 +31,7 @@ public class JFrameJavaAplicationPantallaPrincipal extends JFrame {
 		this.setResizable(true);
 		this.setSize(Toolkit.getDefaultToolkit().getScreenSize());
 		
+		this.setJMenuBar(jMeuBarPantallaPrincipal);
 		this.add(jpanelNorte, BorderLayout.NORTH);
 		this.add(jpanelCenter, BorderLayout.CENTER);
 		this.add(jpanelLeft, BorderLayout.WEST);
