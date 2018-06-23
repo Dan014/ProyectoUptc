@@ -34,9 +34,6 @@ public class JpanelLeftPantallaPrincipal extends JPanel {
 		this.add(myJButton(controller.CommandAction.boton6));
 		this.add(myJButton(controller.CommandAction.boton7));
 
-
-		
-
 	}
 
 	private JButton myJButton(CommandAction commandAction) {

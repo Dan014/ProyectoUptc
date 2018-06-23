@@ -9,9 +9,6 @@ public enum CommandAction {
 	boton6("EMPLEADOS", "AQUI SE EJECUTA EL COMANDO A", "/images/CLIENTES.png"),
 	boton7("PAGOS", "AQUI SE EJECUTA EL COMANDO H", "/images/PAGOS.png");
 
-	
-
-
 
 	private String commandName;
 	private String toolTip;
