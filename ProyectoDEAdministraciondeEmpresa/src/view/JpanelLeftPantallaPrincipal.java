@@ -12,7 +12,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
+
 import controller.CommandAction;
+import controller.ProyectoListener;
 
 public class JpanelLeftPantallaPrincipal extends JPanel {
 	JButton jButton;
@@ -40,6 +42,8 @@ public class JpanelLeftPantallaPrincipal extends JPanel {
 	
 		jButton = new JButton(commandAction.getCommandName());
 		jButton.setBounds(0, 0, 200, 200);
+		jButton.addActionListener(ProyectoListener.getInstance());
+		jButton.setActionCommand(commandAction.getCommandName());
 		jButton.setBackground(new Color(2, 41, 48));
 		jButton.setForeground(new Color(255, 255, 255));// blanco
 		imageIcon = new ImageIcon(getClass().getResource(commandAction.getRutaImage()));

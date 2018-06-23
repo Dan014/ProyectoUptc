@@ -12,7 +12,6 @@ import java.awt.event.MouseWheelListener;
 
 import javax.swing.JOptionPane;
 
-
 import view.JpanelLeftPantallaPrincipal;
 
 public class ProyectoListener implements ActionListener {
@@ -32,35 +31,37 @@ public class ProyectoListener implements ActionListener {
 
 		this.jpanelStatusBar = jpanelStatusBar;
 	}
-
-	/**
-	 * Metodo que escucha componentes
-	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		switch (e.getActionCommand().valueOf(e.getActionCommand())) {
-		case "boton1":
+		case "HOME":
 			boton1();
 			break;
-		case "boton2":
+		case "ARTICULOS":
 			boton2();
 			break;
-		case "boton3":
+		case "COMPRAS":
 			boton3();
 			break;
-		case "boton4":
+		case "VENTAS":
 			boton4();
 			break;
-		case "boton5":
+		case "PROVEEDORES":
 			boton5();
 			break;
-		case "boton6":
+		case "EMPLEADOS":
 			boton6();
+			break;
+		case "PAGOS":
+			boton7();
 			break;
 		default:
 			break;
 		}
 	}
+	
+	
+	
 
 	private void boton1() {
 		System.out.println("Usted ha presionado el Boton 1");
@@ -85,5 +86,11 @@ public class ProyectoListener implements ActionListener {
 	private void boton6() {
 		System.out.println("Usted ha presionado el Boton 6");
 	}
+	
+	private void boton7() {
+		System.out.println("Usted ha presionado el Boton 7");
+		
+	}
+
 
 }
