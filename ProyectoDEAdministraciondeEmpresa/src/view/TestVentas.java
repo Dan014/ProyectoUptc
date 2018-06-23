@@ -1,4 +1,4 @@
-package viewVentasPrincipal;
+package view;
 
 
 public class TestVentas {

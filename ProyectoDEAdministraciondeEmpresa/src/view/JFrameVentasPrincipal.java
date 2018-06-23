@@ -1,4 +1,4 @@
-package viewVentasPrincipal;
+package view;
 
 import java.awt.BorderLayout;
 import java.awt.Toolkit;
@@ -11,15 +11,15 @@ import javax.swing.JInternalFrame;
 
 public class JFrameVentasPrincipal extends JFrame {
 	
-	private JpanelNorte jpanelNorte;
-	private JpanelCenter jpanelCenter;
-	private JpanelLeft jpanelLeft;
+	private JpanelNortePantallaPrincipal jpanelNorte;
+	private JpanelCenterVentasPrincipal jpanelCenter;
+	private JpanelLeftPantallaPrincipal jpanelLeft;
 	
 	public JFrameVentasPrincipal() {
 		super(Constant.APP_NAME);
-		this.jpanelNorte =  new JpanelNorte();
-		this.jpanelCenter = new JpanelCenter();
-		this.jpanelLeft =  new JpanelLeft();
+		this.jpanelNorte =  new JpanelNortePantallaPrincipal();
+		this.jpanelCenter = new JpanelCenterVentasPrincipal();
+		this.jpanelLeft =  new JpanelLeftPantallaPrincipal();
 		init();
 
 	}
