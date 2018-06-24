@@ -37,11 +37,6 @@ public class JFramePantallaPrincipal extends JFrame {
 		this.add(jpanelNorte, BorderLayout.NORTH);
 		this.add(jpanelCenter, BorderLayout.CENTER);
 		this.add(jpanelLeft, BorderLayout.WEST);
-
-
-		
-		
-		
 		this.setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}

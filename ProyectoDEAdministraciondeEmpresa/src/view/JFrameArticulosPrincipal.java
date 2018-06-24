@@ -7,9 +7,14 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JInternalFrame;
 
+import controller.ControlArticulos;
+import model.ModelArticulos;
+
 
 
 public class JFrameArticulosPrincipal extends JFrame {
+	
+
 	
 	private JpanelNortePantallaPrincipal jpanelNorteAdministradorPrincipal;
 	private  JpanelCenterArticulosPrincipla jpanelCenterArticulosPrincipla;

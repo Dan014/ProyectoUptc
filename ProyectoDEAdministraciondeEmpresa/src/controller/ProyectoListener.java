@@ -24,7 +24,6 @@ import view.JpanelNortePantallaPrincipal;
 public class ProyectoListener implements ActionListener {
 	private static ProyectoListener proyectoListener = null;
 	private JpanelLeftPantallaPrincipal jpanelStatusBar;
-
 	public static ProyectoListener getInstance() {
 
 		if (proyectoListener == null) {
@@ -80,11 +79,13 @@ public class ProyectoListener implements ActionListener {
 
 	private void boton2() {
 		System.out.println("Usted ha presionado el Boton 2");
-		JFrameArticulosPrincipal jFrameArticulosPrincipal = new JFrameArticulosPrincipal();
+		JFrameArticulosPrincipal jFrameArticulosPrincipal =  new JFrameArticulosPrincipal();
 		jFrameArticulosPrincipal.setBounds(0, 0, 600, 360);
-		jFrameArticulosPrincipal.setVisible(true);
 		jFrameArticulosPrincipal.setResizable(false);
 		jFrameArticulosPrincipal.setLocationRelativeTo(null);
+		jFrameArticulosPrincipal.setVisible(true);
+
+		
 	}
 
 	private void boton3() {

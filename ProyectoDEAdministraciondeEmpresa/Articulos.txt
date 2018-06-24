@@ -1,0 +1,16 @@
+|1
+|d|2
+|2
+|2
+|1
+|Electrodomestico|d|1
+|d|2
+|2
+|2
+|1
+|Electrodomestico|d|3
+|3|3
+|3
+|3
+|3
+|Muebles|3

@@ -4,16 +4,24 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class JpanelCenterNewProducto extends JPanel {
+import controller.ControlArticulos;
+import model.ModelArticulos;
 
+public class JpanelCenterNewProducto extends JPanel implements ActionListener {
+
+	ModelArticulos modelArticulos = new ModelArticulos();
+	ControlArticulos controlArticulos = new ControlArticulos();
 	JButton jButton;
 	JLabel jLabel, jLabel2, jLabel3, jLabel4, jLabel5, jLabel6, jLabel7, jLabel8, jLabel9;
 	JTextField codigo, preciocompra, stock, name, precioventa, stockminimo, marca;
@@ -102,8 +110,7 @@ public class JpanelCenterNewProducto extends JPanel {
 		name.setFont(new java.awt.Font("Andale Mono", 1, 14));
 		name.setForeground(new java.awt.Color(255, 0, 0));
 		add(name);
-		
-		
+
 		jLabel6 = new JLabel("Precio de Venta");
 		jLabel6.setBounds(320, 85, 200, 25);
 		jLabel6.setFont(new Font("Andale Mono", 3, 15));
@@ -117,8 +124,7 @@ public class JpanelCenterNewProducto extends JPanel {
 		precioventa.setFont(new java.awt.Font("Andale Mono", 1, 14));
 		precioventa.setForeground(new java.awt.Color(255, 0, 0));
 		add(precioventa);
-		
-		
+
 		jLabel7 = new JLabel("Stock Minimo");
 		jLabel7.setBounds(320, 150, 150, 25);
 		jLabel7.setFont(new Font("Andale Mono", 3, 15));
@@ -132,8 +138,7 @@ public class JpanelCenterNewProducto extends JPanel {
 		stockminimo.setFont(new java.awt.Font("Andale Mono", 1, 14));
 		stockminimo.setForeground(new java.awt.Color(255, 0, 0));
 		add(stockminimo);
-		
-		
+
 		jLabel8 = new JLabel("Marca");
 		jLabel8.setBounds(320, 210, 200, 25);
 		jLabel8.setFont(new Font("Andale Mono", 3, 15));
@@ -147,15 +152,50 @@ public class JpanelCenterNewProducto extends JPanel {
 		marca.setFont(new java.awt.Font("Andale Mono", 1, 14));
 		marca.setForeground(new java.awt.Color(255, 0, 0));
 		add(marca);
-		
-		
-		
+
 		jButton = new JButton("GUARDAR");
 		jButton.setBounds(520, 300, 150, 25);
 		jButton.setBackground(new java.awt.Color(224, 224, 224));
 		jButton.setFont(new java.awt.Font("Andale Mono", 1, 14));
+		jButton.addActionListener(this);
 		add(jButton);
 
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == jButton) {
+			int codigoval = Integer.parseInt(codigo.getText());
+			String nameval = name.getText();
+			int pcompraval = Integer.parseInt(preciocompra.getText());
+			int pventaval = Integer.parseInt(precioventa.getText());
+			int stckoval = Integer.parseInt(stock.getText());
+			int stckominval = Integer.parseInt(stockminimo.getText());
+			String tipodeproductoval = categoria.getSelectedItem().toString();
+			String marcaval = marca.getText();
+
+			modelArticulos.setCodigo(codigoval);
+			modelArticulos.setName(nameval);
+			modelArticulos.setPreciocompra(pcompraval);
+			modelArticulos.setPrecioventa(pventaval);
+			modelArticulos.setStock(stckoval);
+			modelArticulos.setStockminimo(stckominval);
+			modelArticulos.setTipodeproducto(tipodeproductoval);
+			modelArticulos.setMarca(marcaval);
+			
+			controlArticulos.save(modelArticulos);
+			controlArticulos.saveinTxt(modelArticulos);
+
+			System.out.println(codigoval);
+			System.out.println(nameval);
+			System.out.println(pcompraval);
+			System.out.println(pventaval);
+			System.out.println(stckoval);
+			System.out.println(stckominval);
+			System.out.println(tipodeproductoval);
+			System.out.println(marcaval);
+
+		}
 	}
 
 }

@@ -13,6 +13,8 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 public class JFrameNewProducto extends JFrame {
+	
+	
 	JpanelCenterNewProducto centerProducto;
 	JpanelNorteNewProducto jpanelNorte;
 	JButton jButton;
@@ -22,7 +24,7 @@ public class JFrameNewProducto extends JFrame {
 	public JFrameNewProducto() {
 		super(Constant.APP_NAME);
 		centerProducto = new JpanelCenterNewProducto();
-		jpanelNorte =  new JpanelNorteNewProducto();
+		jpanelNorte = new JpanelNorteNewProducto();
 		init();
 
 	}
@@ -35,7 +37,7 @@ public class JFrameNewProducto extends JFrame {
 		int width = pantalla.width;
 		setSize(width / 2, height / 2);
 		this.setLocationRelativeTo(null);
-		
+
 		this.add(jpanelNorte, BorderLayout.NORTH);
 		this.add(centerProducto, BorderLayout.CENTER);
 
