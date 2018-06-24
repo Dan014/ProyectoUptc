@@ -13,4 +13,14 @@
 |3
 |3
 |3
-|Muebles|3
+|Muebles|3|991021
+|cocacola|2000
+|3000
+|21
+|10
+|Bebida|xoxo|2018
+|daniel|1000
+|1500
+|100
+|500
+|Muebles|exito

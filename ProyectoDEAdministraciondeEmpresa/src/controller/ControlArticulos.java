@@ -54,7 +54,7 @@ public class ControlArticulos {
 
 	public DefaultTableModel listArticles() {
 
-		Vector cabeceras = new Vector();
+		Vector<String> cabeceras = new Vector<String>();
 		cabeceras.addElement("CODIGO");
 		cabeceras.addElement("NOMBRE");
 		cabeceras.addElement("PREDCIO DE COMPRA");

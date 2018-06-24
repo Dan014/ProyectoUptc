@@ -14,6 +14,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
 
 import controller.ControlArticulos;
 import model.ModelArticulos;
@@ -23,6 +24,7 @@ public class JpanelCenterNewProducto extends JPanel implements ActionListener {
 	ModelArticulos modelArticulos = new ModelArticulos();
 	ControlArticulos controlArticulos = new ControlArticulos();
 	JButton jButton;
+	DefaultTableModel defaultTableModel;
 	JLabel jLabel, jLabel2, jLabel3, jLabel4, jLabel5, jLabel6, jLabel7, jLabel8, jLabel9;
 	JTextField codigo, preciocompra, stock, name, precioventa, stockminimo, marca;
 	JComboBox categoria;
@@ -165,12 +167,13 @@ public class JpanelCenterNewProducto extends JPanel implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == jButton) {
-			int codigoval = Integer.parseInt(codigo.getText());
+			defaultTableModel = new DefaultTableModel();
+			int codigoval = Integer.parseInt(codigo.getText().toString());
 			String nameval = name.getText();
-			int pcompraval = Integer.parseInt(preciocompra.getText());
-			int pventaval = Integer.parseInt(precioventa.getText());
-			int stckoval = Integer.parseInt(stock.getText());
-			int stckominval = Integer.parseInt(stockminimo.getText());
+			int pcompraval = Integer.parseInt(preciocompra.getText().toString());
+			int pventaval = Integer.parseInt(precioventa.getText().toString());
+			int stckoval = Integer.parseInt(stock.getText().toString());
+			int stckominval = Integer.parseInt(stockminimo.getText().toString());
 			String tipodeproductoval = categoria.getSelectedItem().toString();
 			String marcaval = marca.getText();
 

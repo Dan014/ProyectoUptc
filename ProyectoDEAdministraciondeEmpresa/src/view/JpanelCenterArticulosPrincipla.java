@@ -28,7 +28,7 @@ public class JpanelCenterArticulosPrincipla extends JPanel implements ActionList
 	ModelArticulos modelArticulos = new ModelArticulos();
 	ControlArticulos controlArticulos = new ControlArticulos();
 	DefaultTableModel defaultTableModel;
-	Vector cabeceras = new Vector();
+	Vector<String> cabeceras = new Vector<String>();
 
 	JLabel jLabel = new JLabel("PRODUCTO NUEVO");
 	JButton jButton, jButton2, jButton3;
@@ -39,14 +39,14 @@ public class JpanelCenterArticulosPrincipla extends JPanel implements ActionList
 
 	public JpanelCenterArticulosPrincipla() {
 		init();
-		cabeceras.addElement("A");
-		cabeceras.addElement("E");
-		cabeceras.addElement("R");
-		cabeceras.addElement("F");
-		cabeceras.addElement("H");
-		cabeceras.addElement("H");
-		cabeceras.addElement("Y");
-		cabeceras.addElement("U");
+		cabeceras.addElement("CODIGO");
+		cabeceras.addElement("NOMBRE");
+		cabeceras.addElement("PREDCIO DE COMPRA");
+		cabeceras.addElement("PRECIO DE VENTA");
+		cabeceras.addElement("STOCK");
+		cabeceras.addElement("STOCK MINIMO");
+		cabeceras.addElement("TIPO DE PRODUCTO");
+		cabeceras.addElement("MARCA");
 
 		defaultTableModel = new DefaultTableModel(cabeceras, 0);
 		jTable.setModel(defaultTableModel);
@@ -71,6 +71,8 @@ public class JpanelCenterArticulosPrincipla extends JPanel implements ActionList
 
 		jButton2 = new JButton("ELIMINAR");
 		jButton2.setBounds(200, 20, 100, 50);
+		jButton2.addActionListener(this);
+
 		jPanel.add(jButton2);
 
 		jButton3 = new JButton("MODIFICAR");
@@ -90,7 +92,8 @@ public class JpanelCenterArticulosPrincipla extends JPanel implements ActionList
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == jButton2) {
-			jTable.setModel(controlArticulos.listArticles());
+			System.out.println("sdsd");
+		jTable.setModel(controlArticulos.listArticles());
 		}
 	}
 
