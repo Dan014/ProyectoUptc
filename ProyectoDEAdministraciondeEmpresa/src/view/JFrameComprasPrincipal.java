@@ -43,7 +43,6 @@ public class JFrameComprasPrincipal extends JFrame {
 		
 		
 		this.setVisible(true);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 }

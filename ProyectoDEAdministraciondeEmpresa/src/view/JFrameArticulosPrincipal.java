@@ -2,6 +2,8 @@ package view;
 
 import java.awt.BorderLayout;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -12,7 +14,7 @@ import model.ModelArticulos;
 
 
 
-public class JFrameArticulosPrincipal extends JFrame {
+public class JFrameArticulosPrincipal extends JFrame implements ActionListener {
 	
 
 	
@@ -41,14 +43,14 @@ public class JFrameArticulosPrincipal extends JFrame {
 
 		this.add(jpanelNorteAdministradorPrincipal, BorderLayout.NORTH);
 		this.add(jpanelCenterArticulosPrincipla, BorderLayout.CENTER);
-		this.add(jpanelLeftAdministradorPrincipal, BorderLayout.WEST);
-
-
-		
-		
-		
+		this.add(jpanelLeftAdministradorPrincipal, BorderLayout.WEST);		
 		this.setVisible(true);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

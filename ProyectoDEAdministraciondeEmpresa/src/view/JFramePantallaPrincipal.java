@@ -2,6 +2,8 @@ package view;
 
 import java.awt.BorderLayout;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -10,7 +12,7 @@ import controller.ProyectoListener;
 
 
 
-public class JFramePantallaPrincipal extends JFrame {
+public class JFramePantallaPrincipal extends JFrame  {
 	
 	private JpanelNortePantallaPrincipal jpanelNorte;
 	private JpanelCenterPantallarPrincipal jpanelCenter;
@@ -23,7 +25,7 @@ public class JFramePantallaPrincipal extends JFrame {
 		this.jpanelCenter = new JpanelCenterPantallarPrincipal();
 		this.jpanelLeft =  new JpanelLeftPantallaPrincipal();
 		this.jMeuBarPantallaPrincipal =  new JMeuBarPantallaPrincipal();
-		ProyectoListener.getInstance().setJpanelStatusBar(jpanelLeft);
+//		ProyectoListener.getInstancse().setJpanelStatusBar(jpanelLeft);
 		init();
 
 	}
@@ -38,7 +40,8 @@ public class JFramePantallaPrincipal extends JFrame {
 		this.add(jpanelCenter, BorderLayout.CENTER);
 		this.add(jpanelLeft, BorderLayout.WEST);
 		this.setVisible(true);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
+
+
 
 }

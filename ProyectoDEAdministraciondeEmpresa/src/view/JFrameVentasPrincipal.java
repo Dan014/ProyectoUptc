@@ -42,7 +42,6 @@ public class JFrameVentasPrincipal extends JFrame {
 		
 		
 		this.setVisible(true);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 }

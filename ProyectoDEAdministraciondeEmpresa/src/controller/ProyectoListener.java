@@ -24,7 +24,7 @@ import view.JpanelNortePantallaPrincipal;
 public class ProyectoListener implements ActionListener {
 	private static ProyectoListener proyectoListener = null;
 	private JpanelLeftPantallaPrincipal jpanelStatusBar;
-	private JFramePantallaPrincipal jFramePantallaPrincipal;
+
 	public static ProyectoListener getInstance() {
 
 		if (proyectoListener == null) {
@@ -34,18 +34,18 @@ public class ProyectoListener implements ActionListener {
 		return proyectoListener;
 	}
 
-	public void setJpanelStatusBar(JpanelLeftPantallaPrincipal jpanelStatusBar) {
-
-		this.jpanelStatusBar = jpanelStatusBar;
-	}
-	
-//	
-//	public void setjFramePantallaPrincipal(JFramePantallaPrincipal jFramePantallaPrincipal) {
+//	public void setJpanelStatusBar(JpanelLeftPantallaPrincipal jpanelStatusBar) {
 //
-//		this.jFramePantallaPrincipal = jFramePantallaPrincipal;
+//		this.jpanelStatusBar = jpanelStatusBar;
 //	}
-//	
-	
+
+	//
+	// public void setjFramePantallaPrincipal(JFramePantallaPrincipal
+	// jFramePantallaPrincipal) {
+	//
+	// this.jFramePantallaPrincipal = jFramePantallaPrincipal;
+	// }
+	//
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
@@ -87,50 +87,41 @@ public class ProyectoListener implements ActionListener {
 
 	private void boton2() {
 		System.out.println("Usted ha presionado el Boton 2");
-		JFrameArticulosPrincipal jFrameArticulosPrincipal =  new JFrameArticulosPrincipal();
+		JFrameArticulosPrincipal jFrameArticulosPrincipal = new JFrameArticulosPrincipal();
 		jFrameArticulosPrincipal.setBounds(0, 0, 600, 360);
 		jFrameArticulosPrincipal.setResizable(false);
 		jFrameArticulosPrincipal.setLocationRelativeTo(null);
 		jFrameArticulosPrincipal.setVisible(true);
 
-		
 	}
 
 	private void boton3() {
 		System.out.println("Usted ha presionado el Boton 3");
 		JFrameComprasPrincipal jFrameComprasPrincipal = new JFrameComprasPrincipal();
-		JFramePantallaPrincipal jFramePantallaPrincipal = new JFramePantallaPrincipal();
 		jFrameComprasPrincipal.setBounds(0, 0, 600, 360);
 		jFrameComprasPrincipal.setResizable(false);
 		jFrameComprasPrincipal.setLocationRelativeTo(null);
 		jFrameComprasPrincipal.setVisible(true);
-		jFramePantallaPrincipal.dispose();
 	}
 
 	private void boton4() {
 		System.out.println("Usted ha presionado el Boton 4");
 
 		JFrameVentasPrincipal jFrameVentasPrincipal = new JFrameVentasPrincipal();
-		JFramePantallaPrincipal jFramePantallaPrincipal = new JFramePantallaPrincipal();
-
 		jFrameVentasPrincipal.setBounds(0, 0, 600, 360);
 		jFrameVentasPrincipal.setVisible(true);
 		jFrameVentasPrincipal.setResizable(false);
 		jFrameVentasPrincipal.setLocationRelativeTo(null);
-		jFramePantallaPrincipal.dispose();
 
 	}
 
 	private void boton5() {
 		System.out.println("Usted ha presionado el Boton 5");
 		JFrameProveedoresPrincipal jFrameProveedoresPrincipal = new JFrameProveedoresPrincipal();
-		JFramePantallaPrincipal jFramePantallaPrincipal = new JFramePantallaPrincipal();
-
 		jFrameProveedoresPrincipal.setBounds(0, 0, 600, 360);
 		jFrameProveedoresPrincipal.setVisible(true);
 		jFrameProveedoresPrincipal.setResizable(false);
 		jFrameProveedoresPrincipal.setLocationRelativeTo(null);
-		jFramePantallaPrincipal.dispose();
 
 	}
 
@@ -138,28 +129,20 @@ public class ProyectoListener implements ActionListener {
 		System.out.println("Usted ha presionado el Boton 6");
 
 		JFrameEmpleadoPrincipal jFrameEmpleadoPrincipal = new JFrameEmpleadoPrincipal();
-		JFramePantallaPrincipal jFramePantallaPrincipal = new JFramePantallaPrincipal();
-
 		jFrameEmpleadoPrincipal.setBounds(0, 0, 600, 360);
 		jFrameEmpleadoPrincipal.setVisible(true);
 		jFrameEmpleadoPrincipal.setResizable(false);
 		jFrameEmpleadoPrincipal.setLocationRelativeTo(null);
-		jFramePantallaPrincipal.dispose();
 
 	}
 
 	private void boton7() {
 		System.out.println("Usted ha presionado el Boton 7");
-
 		JFrameEmpleadoPrincipal jFrameEmpleadoPrincipal = new JFrameEmpleadoPrincipal();
-		JFramePantallaPrincipal jFramePantallaPrincipal = new JFramePantallaPrincipal();
-
 		jFrameEmpleadoPrincipal.setBounds(0, 0, 600, 360);
 		jFrameEmpleadoPrincipal.setVisible(true);
 		jFrameEmpleadoPrincipal.setResizable(false);
 		jFrameEmpleadoPrincipal.setLocationRelativeTo(null);
-		jFramePantallaPrincipal.dispose();
-
 
 	}
 
