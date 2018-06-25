@@ -23,4 +23,9 @@
 |1500
 |100
 |500
-|Muebles|exito
+|Muebles|exito|1999
+|Galletas Oreo|1000
+|1500
+|200
+|120
+|Bebida|Oreo
