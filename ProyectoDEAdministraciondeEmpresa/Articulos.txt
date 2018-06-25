@@ -28,4 +28,9 @@
 |1500
 |200
 |120
-|Bebida|Oreo
+|Bebida|Oreo|31
+|gaseosa|1200
+|2000
+|200
+|50
+|Muebles|cocacola
